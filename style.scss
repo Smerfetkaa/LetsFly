@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  color: #333333;
+}
+
+@mixin flex($display, $dir, $align) {
+  display: $display;
+  flex-direction: $dir;
+  align-items: $align;
+}
+@mixin RobotoSlab($fw, $fs, $lh) {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+@mixin Lato($fw, $fs, $lh) {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+@mixin Lora($fw, $fs, $lh) {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+@mixin Quicksand($fw, $fs, $lh) {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+.button {
+  background: #1ed500;
+  @include Quicksand(700, 20px, 18px);
+  color: #ffffff;
+}
+.bg-1 {
+  background: url(./img/derek-thomson-TWoL-QCZubY-unsplash\ 4.png) center/cover
+    no-repeat;
+    height: auto;
+}
+.logo {
+  @include RobotoSlab(700, 32px, 32px);
+}
+.nav {
+  @include flex(flex, row, center);
+  &__item {
+    padding: 35px 25px;
+    @include Lato(400, 22px, 26px);
+  }
+}
+.social {
+  @include flex(flex, row, center);
+  gap: 45px;
+}
+
+.langbar {
+  position: relative;
+  @include flex(flex, row, center);
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+  svg {
+    text-align: center;
+  }
+
+  &__menu {
+    background: rgba(0, 0, 0, 0.7);
+    @include flex(flex, column, center);
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 40px;
+  }
+  &__item {
+    display: none;
+    color: #ffffff;
+  }
+}
+
+.langbar:hover li {
+  display: initial;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.85);
+  @include flex(flex, row, center);
+  justify-content: space-around;
+
+  &__logo {
+    color: #ffffff;
+  }
+
+  &__nav > li {
+    color: #ffffff;
+  }
+  &__social svg {
+    fill: #ffffff;
+  }
+}
+
+.promo {
+  @include flex(flex, column, center);
+  min-height: 800px;
+  justify-content: space-evenly;
+}
+.order {
+  background: rgba(0, 0, 0, 0.85);
+  @include flex(flex, column, center);
+  justify-content: space-between;
+  padding: 48px;
+  max-width: 60vw;
+
+  &__text {
+    @include Lora(700, 84px, 100px);
+    text-align: center;
+    color: #ffffff;
+  }
+  &__description {
+    @include Lato(400, 24px, 29px);
+    color: #ffffff;
+    margin: 32px 0;
+  }
+  &__button {
+    padding: 20px 110px;
+  }
+}
+.title {
+  @include RobotoSlab(700, 56px, 74px);
+  text-transform: uppercase;
+  &__title--bl {
+    color: #333333;
+  }
+  &__title--wt {
+    color: #ffffff;
+  }
+}
+.aboutUs {
+  @include flex(flex, column, center);
+  margin: 120px 80px 260px 80px;
+  gap: 50px;
+  &__text {
+    @include Quicksand(500, 20px, 32px);
+    max-width: 70%;
+    text-align: center;
+  }
+  .static {
+    @include flex(flex, row, center);
+    flex-wrap: wrap;
+    gap: 140px;
+    div {
+      position: relative;
+      width: 320px;
+    }
+
+    &__numbers {
+      @include RobotoSlab(700, 144px, 190px);
+      text-transform: uppercase;
+      color: #1ed400;
+      text-align: center;
+    }
+    &__img {
+      position: absolute;
+      top: 85px;
+      left: 30%;
+    }
+    &__text {
+      @include Quicksand(400, 40px, 32px);
+      text-align: center;
+      position: absolute;
+      top: 250px;
+    }
+  }
+}
+.barselona {
+  background: url(./img/ken-cheung-VbLTNceBTFE-unsplash\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  @include flex(flex, column, center);
+  justify-content: space-evenly;
+  min-height: 650px;
+
+  padding: 0 350px;
+  &__name {
+    @include RobotoSlab(700, 144px, 144px);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__date {
+    @include Quicksand(500, 24px, 18px);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__text {
+    @include Quicksand(400, 24px, 32px);
+    color: #ffffff;
+    text-align: center;
+  }
+  &__line {
+    width: 300px;
+    align-self: center;
+    border-bottom: 3px solid #ffffff;
+  }
+  &__discount {
+    @include Quicksand(500, 28px, 32px);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__button {
+    padding: 20px 50px;
+  }
+}
+.ways {
+  @include flex(flex, column, center);
+  justify-content: space-evenly;
+  min-height: 840px;
+  &__button {
+    padding: 20px 62px;
+  }
+
+  &__text {
+    @include Quicksand(500, 14px, 18px);
+    margin: 8px 0;
+  }
+  &__box {
+    text-align: center;
+  }
+}
+.visial {
+  @include flex(flex, row, center);
+  justify-content: space-evenly;
+  min-width: 90vw;
+  &__conteiner {
+    position: relative;
+  }
+  .img {
+    &--big {
+      height: 342px;
+    }
+    &--small {
+      height: 294px;
+    }
+  }
+  &__text {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 4px;
+    position: absolute;
+    top: 10px;
+    color: #ffffff;
+    @include RobotoSlab(400, 18px, 18px);
+  }
+}
+.stories {
+  background: url(./img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  @include flex(flex, column, center);
+  justify-content: space-evenly;
+  min-height: 500px;
+}
+.visial {
+  &__conteiner {
+    > svg {
+      position: absolute;
+      left: 46%;
+      top: 45%;
+    }
+  }
+}
+.footer {
+  margin-top: 40px;
+  background: url(./img/imgMountains\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  @include flex(flex, row, center);
+  justify-content: space-around;
+
+  &__logo {
+    color: #333333;
+  }
+
+  &__nav > li {
+    color: #333333;
+  }
+
+  &__social svg {
+    fill: #333333;
+  }
+}

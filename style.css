@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  color: #333333;
+}
+
+.button {
+  background: #1ed500;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.bg-1 {
+  background: url(./img/derek-thomson-TWoL-QCZubY-unsplash\ 4.png) center/cover no-repeat;
+  height: auto;
+}
+
+.logo {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav__item {
+  padding: 35px 25px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+}
+
+.langbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.langbar img {
+  width: 32px;
+  height: 32px;
+}
+.langbar svg {
+  text-align: center;
+}
+.langbar__menu {
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 40px;
+}
+.langbar__item {
+  display: none;
+  color: #ffffff;
+}
+
+.langbar:hover li {
+  display: initial;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__logo {
+  color: #ffffff;
+}
+.header__nav > li {
+  color: #ffffff;
+}
+.header__social svg {
+  fill: #ffffff;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+  justify-content: space-evenly;
+}
+
+.order {
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+  max-width: 60vw;
+}
+.order__text {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+.order__description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 32px 0;
+}
+.order__button {
+  padding: 20px 110px;
+}
+
+.title {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+.title__title--bl {
+  color: #333333;
+}
+.title__title--wt {
+  color: #ffffff;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 80px 260px 80px;
+  gap: 50px;
+}
+.aboutUs__text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 70%;
+  text-align: center;
+}
+.aboutUs .static {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+.aboutUs .static div {
+  position: relative;
+  width: 320px;
+}
+.aboutUs .static__numbers {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 190px;
+  text-transform: uppercase;
+  color: #1ed400;
+  text-align: center;
+}
+.aboutUs .static__img {
+  position: absolute;
+  top: 85px;
+  left: 30%;
+}
+.aboutUs .static__text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 32px;
+  text-align: center;
+  position: absolute;
+  top: 250px;
+}
+
+.barselona {
+  background: url(./img/ken-cheung-VbLTNceBTFE-unsplash\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 650px;
+  padding: 0 350px;
+}
+.barselona__name {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 144px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.barselona__date {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.barselona__text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+.barselona__line {
+  width: 300px;
+  align-self: center;
+  border-bottom: 3px solid #ffffff;
+}
+.barselona__discount {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.barselona__button {
+  padding: 20px 50px;
+}
+
+.ways {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 840px;
+}
+.ways__button {
+  padding: 20px 62px;
+}
+.ways__text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 8px 0;
+}
+.ways__box {
+  text-align: center;
+}
+
+.visial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 90vw;
+}
+.visial__conteiner {
+  position: relative;
+}
+.visial .img--big {
+  height: 342px;
+}
+.visial .img--small {
+  height: 294px;
+}
+.visial__text {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 4px;
+  position: absolute;
+  top: 10px;
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.stories {
+  background: url(./img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 500px;
+}
+
+.visial__conteiner > svg {
+  position: absolute;
+  left: 46%;
+  top: 45%;
+}
+
+.footer {
+  margin-top: 40px;
+  background: url(./img/imgMountains\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer__logo {
+  color: #333333;
+}
+.footer__nav > li {
+  color: #333333;
+}
+.footer__social svg {
+  fill: #333333;
+}/*# sourceMappingURL=style.css.map */
